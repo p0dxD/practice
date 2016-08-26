@@ -1,0 +1,91 @@
+header .row,
+footer .row {
+  display: flex;
+  align-items: center; }
+
+header nav, footer nav {
+  display: flex;
+  justify-content: flex-end; }
+
+header p, footer p {
+  padding: 0 20px;
+  margin: 0; }
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 100vw;
+    height: 50vh; } }
+.foot {
+  padding-bottom: 20px; }
+
+.second-screen {
+  height: 99vh;
+  width: 100vw;
+  display: hidden;
+  background-color: white; }
+  .second-screen .move-up, .second-screen .move-down {
+    height: 100px; }
+    .second-screen .move-up:hover, .second-screen .move-down:hover {
+      opacity: .1;
+      background-color: blue; }
+
+.third-screen {
+  height: 99vh;
+  width: 100vw;
+  display: hidden;
+  background-color: white; }
+  .third-screen .move-up, .third-screen .move-down {
+    height: 100px; }
+    .third-screen .move-up:hover, .third-screen .move-down:hover {
+      opacity: .1;
+      background-color: blue; }
+
+.fourth-screen {
+  height: 99vh;
+  width: 100vw;
+  display: hidden;
+  background-color: white; }
+  .fourth-screen .move-up, .fourth-screen .move-down {
+    height: 100px; }
+    .fourth-screen .move-up:hover, .fourth-screen .move-down:hover {
+      opacity: .1;
+      background-color: blue; }
+
+/*carousel*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto; }
+
+.antique:hover {
+  color: blue; }
+
+.gifts:hover {
+  color: blue; }
+
+.woodwork:hover {
+  color: blue; }
+
+.kitchen:hover {
+  color: blue; }
+
+.carousel-control.right {
+  right: 15px; }
+
+.section > img {
+  height: 500px; }
+
+img {
+  height: 300px; }
+
+.bottom-box {
+  padding: 100px 100px 100px 100px; }
+
+span {
+  font-type: bold; }
+
+.move-down {
+  position: relative;
+  botom: 0; }
+
+/*# sourceMappingURL=main.css.map */

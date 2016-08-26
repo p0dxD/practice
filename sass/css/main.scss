@@ -1,0 +1,194 @@
+$image-height: 85vh;
+$image-width: 52vw;
+
+$image-width-small: 100vw;
+$image-height-small:50vh;
+
+$image-captions: (antique, gifts, woodwork, kitchen);
+$screens: (second, third, fourth);
+$colors-for-screens: red blue orange;
+
+// $default margin
+@mixin hover-example($color, $second-color: purple){
+	&:hover{
+		color:$color;
+	}
+	&:active{
+		color: $second-color;
+	}
+}
+@mixin img-sizing($w: 50px, $h: 50px){
+	width: $w;
+	height: $h;
+}
+
+// @mixin color-backgrounds($screen-location){
+// 	@if $screen-location == second {
+// 		background-color: red;
+// 		} else if $screen-location == third {
+// 			background-color: blue;
+// 			} else {
+// 				background-color: orange;
+// 			}
+// 		}
+
+
+// 		@mixin click-imag{
+
+// 		}
+
+		// p{
+		// 	@include  hover-example(red);
+		// 	font:{
+		// 		family: Roboto;
+		// 		size: 14px;
+		// 	}
+		// }
+
+
+// 		img{
+// 	// @include img-sizing;
+// 	@include img-sizing($image-width, $image-height);
+// }
+
+header .row,
+footer .row{
+	display: flex;
+	align-items: center;
+}
+
+header nav, footer nav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header p, footer p{
+	padding: 0 20px;
+	margin: 0;
+}
+
+@media screen and (max-width: 800px){
+	img{
+		@include img-sizing($image-width-small, $image-height-small);
+	}
+	
+}
+
+.foot{
+	padding-bottom:20px;
+}
+
+// .test{
+// 	// height:100vw;
+// 	.figures{
+// 		position: inline;
+// 		display: flex;
+// 		overflow-y: scroll;
+// 	// overflow-x:hidden;
+// 	// height: 600px;
+// 	width: 100%;
+// 	&:nth-chld(2):hover{
+// 		background-color:red;
+// 	}
+// }
+
+// }
+
+@each $item in $screens{
+	.#{$item}-screen{
+		height: 99vh;
+		width: 100vw;
+		display: hidden;
+		background-color: white;
+		// @include color-backgrounds($item);
+		// background-color: hsl(72, 100%, 60%);
+		.move-up, .move-down{
+			height: 100px;
+		// background-color: blue;
+		&:hover{
+			opacity: .1;
+			background-color:blue;
+			// color:blue;
+		}
+	}
+}
+}
+
+// .second-screen{
+// 	background-color: violet;
+// }
+
+// .third-screen{
+// 	background-color: white;
+// }
+
+// .fourth-screen{
+// 	background-color: orange;
+// }
+
+
+// .second-screen{
+// 	height: 99vh;
+// 	width: 100vw;
+// 	display: hidden;
+// 	background-color: hsl(72, 100%, 60%);
+// 	.move-up{
+// 		height: 100px;
+// 		// background-color: blue;
+// 		&:hover{
+// 			opacity: .1;
+// 			background-color:blue;
+// 			// color:blue;
+// 		}
+// 	}
+// }
+
+
+
+/*carousel*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 100%;
+	margin: auto;
+}
+
+@each $item in $image-captions{
+	.#{$item}:hover{
+		color: blue;
+	}
+}
+
+
+.carousel-control.right{
+	right: 15px;
+}
+
+.section > img{
+	height: 500px;
+}
+
+// .myinner{
+// 	height: 90vh;
+// }
+
+img{
+	height:300px;
+}
+
+// .myjumbotron{
+// 	height: 90vh;
+// }
+
+.bottom-box{
+	padding: 100px 100px 100px 100px;
+}
+
+span{
+	font-type: bold;
+}
+
+.move-down{
+	position:relative;
+	botom: 0;
+}

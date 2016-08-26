@@ -1,0 +1,27 @@
+img{float: left;}
+
+p{
+
+	background-color: red;
+}
+
+div {
+    margin: 50px 50px 50px 50px;
+    background-color: blue;
+    padding: 50px 50px 50px 50px;
+}
+
+.content{
+	background-color: red;
+	float: right;
+}
+.sidebar{
+	background-color: orange;
+	float:left;
+}
+
+.footer{
+	
+	background-color: purple;
+	clear:both;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo element</title>
+	<style type="text/css">
+		h1 + p::first-line{
+			font-family: Georgia;
+			font-style: italic;
+		}
+		h1 + p::first-letter{
+			font-size: 3em;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<h1></h1>
+		<p>This is a test. Paragraph, second, third. another sentence.</p>
+	</div>
+	<div>.</div>
+	<div>.</div>
+	<div>
+		
+		<p>This is a test. Paragraph, second, third. another sentence.</p>
+	</div>
+</body>
+</html>

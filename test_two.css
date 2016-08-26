@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+
+   body {
+   	line-height: 1;
+   }
+
+   ol, ul {
+   	list-style: none;
+   }
+
+   blockquote, q {
+   	quotes: none;
+   }
+
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+   	content: '';
+   	content: none;
+   }
+
+
+   table {
+   	border-collapse: collapse;
+   	border-spacing: 0;
+   }
+
+/*END OF RESETING*/
+   html{
+   	background-color: yellow;
+   }
+
+   body{
+   	width: 80%;
+   	margin: 0 auto;
+   	background-color: white;
+   }
+   header{
+   	background-color: blue;
+   	height: 50px;
+   	margin-bottom: 1em;
+   }
+
+   nav{
+   	background-color: green;
+   	height: 25px;
+   	margin-bottom: 1em;
+   }
+   aside{
+   	background-color: orange;
+   	height: 500px;
+   	width: 500px;
+   	float: right;
+   }	
+
+   article{
+   	background-color: gray;
+   	height: 500px;
+   	width: 500px;
+   	float: left;
+   }
+
+   footer{
+   	margin-top: 1em;
+   	height: 100px;
+   	background-color: purple;
+   	clear: both;
+   }
+
+   footer li{
+   	margin-left: 2em;
+   	float: left;
+   }
+
+
+
+   .Register_today_to_access__these_valuable_insigh {
+  font-size: 25px;
+  font-family: "BentonSans";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 373.162px;
+  top: 1112.688px;
+  z-index: 52;
+}

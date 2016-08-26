@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clear fix</title>
+	<style type="text/css">
+		p{
+			display: block;
+			-webkit-margin-before: 1em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+			margin: 1em;
+			border: solid #6AC5AC 3px;
+		}
+
+		.elem p {
+			padding: 0 1em;
+		}
+		.elem {
+			border: solid #6AC5AC 3px;
+			position: relative;
+		}		
+		.elem-2 p {
+			padding: 0 1em;
+		}
+		.elem-2 {
+			border: solid red 3px;
+			position: relative;
+		}
+		img{
+			margin-top: 0;
+			float: right;
+		}
+
+		.container{
+			
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	
+	<div class="elem">
+		<p>Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!</p>
+		<img src="http://learnlayout.com/images/ilta.png">
+	</div>	
+
+</div>
+	<div style="margin:50px;"></div><!--divisor-->
+
+	<div class="elem-2">
+		<p>Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!</p>
+	</div>
+</body>
+</html>

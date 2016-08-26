@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<style type="text/css">
+		body {
+			background-color: #555;
+		}
+		.container {
+			border: 1px solid #aaa;
+			background-color: #eee;
+			padding: 10px;
+			height: 100px;
+			/* transition: height 0.2s ease-in-out, background-color 0.2s ease-in-out; */
+			transition: all 0.2s ease-in-out;
+			transform: rotate(0);
+		}
+		.container:hover {
+			height: 200px;
+			background-color: red;
+			padding: 50px;
+			/* transition: height 4.5s ease-in-out, background-color 4.5s ease-in-out; */
+			transition: all 2.5s ease-in-out;
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		something
+	</div>
+</body>
+</html>

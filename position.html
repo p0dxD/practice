@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positions</title>
+	<style type="text/css">
+		body{
+
+		}
+
+		div{
+			width: 500px;
+			height: 500px;
+			border: 3px solid black;
+		}
+
+		div.static{	
+			position: static;
+			/*top: 50px;*/
+		}
+
+		div.relative{
+			position: relative;
+		}
+
+		div.fixed{
+			position: fixed;
+			top: 0;
+			right: 0;
+			float: right;
+		}
+
+		div.absolute{	
+			position: absolute;
+		}
+		
+		footer{
+			/*margin-top: 1em;*/
+			height: 100px;
+			background-color: purple;
+			clear: both;
+		}
+
+		footer li{
+			margin-left: 2em;
+			float: left;
+		}
+		
+		article > img{
+			float: right;
+			margin: 0 0 1em 1em;
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="static">static</div>
+	<div class="relative">relative</div>
+	<div class="fixed">fixed</div>
+	<div class="absolute">absolute</div>
+
+	<article>
+		<img src="http://learnlayout.com/images/ilta.png">
+	</article>
+
+	<footer>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>	
+	</footer>
+
+</body>
+</html>
